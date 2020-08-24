@@ -35,7 +35,7 @@ This bank has the following mandatory fields:
     // You can add more ``Demonstrativos`` or ``Instrucoes`` on this way:
 
     $bradesco->addDescricaoDemonstrativo('demonstrativo 4');
-    $bradesco->addInstrucoes('instrucao 2');
+    $bradesco->addInstrucao('instrucao 2');
 
 Or, Simply:
 
