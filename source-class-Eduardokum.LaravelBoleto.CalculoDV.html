@@ -237,6 +237,7 @@
 				<li><a href="class-Eduardokum.LaravelBoleto.Cnab.Retorno.Cnab400.Banco.Qiscd.html">Eduardokum\LaravelBoleto\Cnab\Retorno\Cnab400\Banco\Qiscd</a></li>
 				<li><a href="class-Eduardokum.LaravelBoleto.Cnab.Retorno.Cnab400.Banco.Santander.html">Eduardokum\LaravelBoleto\Cnab\Retorno\Cnab400\Banco\Santander</a></li>
 				<li><a href="class-Eduardokum.LaravelBoleto.Cnab.Retorno.Cnab400.Banco.Sicredi.html">Eduardokum\LaravelBoleto\Cnab\Retorno\Cnab400\Banco\Sicredi</a></li>
+				<li><a href="class-Eduardokum.LaravelBoleto.Cnab.Retorno.Cnab400.Banco.Unicred.html">Eduardokum\LaravelBoleto\Cnab\Retorno\Cnab400\Banco\Unicred</a></li>
 				<li><a href="class-Eduardokum.LaravelBoleto.Cnab.Retorno.Cnab400.Detalhe.html">Eduardokum\LaravelBoleto\Cnab\Retorno\Cnab400\Detalhe</a></li>
 				<li><a href="class-Eduardokum.LaravelBoleto.Cnab.Retorno.Cnab400.Header.html">Eduardokum\LaravelBoleto\Cnab\Retorno\Cnab400\Header</a></li>
 				<li><a href="class-Eduardokum.LaravelBoleto.Cnab.Retorno.Cnab400.Trailer.html">Eduardokum\LaravelBoleto\Cnab\Retorno\Cnab400\Trailer</a></li>
@@ -632,8 +633,17 @@
 </span><span id="348" class="l"><a href="#348">348 </a>        <span class="php-keyword1">return</span> <span class="php-var">$digitoVerificador</span>;
 </span><span id="349" class="l"><a href="#349">349 </a>    }
 </span><span id="350" class="l"><a href="#350">350 </a>
-</span><span id="351" class="l"><a href="#351">351 </a>}
-</span><span id="352" class="l"><a href="#352">352 </a></span></code></pre>
+</span><span id="351" class="l"><a href="#351">351 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> unicredAgencia(<span class="php-var">$agencia</span>)
+</span><span id="352" class="l"><a href="#352">352 </a>    {
+</span><span id="353" class="l"><a href="#353">353 </a>        <span class="php-keyword1">return</span> Util::modulo11(<span class="php-var">$agencia</span>, <span class="php-num">2</span>, <span class="php-num">9</span>, <span class="php-num">0</span>, <span class="php-quote">'X'</span>);
+</span><span id="354" class="l"><a href="#354">354 </a>    }
+</span><span id="355" class="l"><a href="#355">355 </a>
+</span><span id="356" class="l"><a href="#356">356 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> unicredContaCorrente(<span class="php-var">$contaCorrente</span>)
+</span><span id="357" class="l"><a href="#357">357 </a>    {
+</span><span id="358" class="l"><a href="#358">358 </a>        <span class="php-keyword1">return</span> Util::modulo11(<span class="php-var">$contaCorrente</span>, <span class="php-num">2</span>, <span class="php-num">9</span>, <span class="php-num">0</span>, <span class="php-quote">'X'</span>);
+</span><span id="359" class="l"><a href="#359">359 </a>    }
+</span><span id="360" class="l"><a href="#360">360 </a>}
+</span><span id="361" class="l"><a href="#361">361 </a></span></code></pre>
 	</div>
 
 	<div id="footer">
@@ -641,6 +651,6 @@
 	</div>
 </div>
 <script src="resources/combined.js?37f5d759fe32f60cc17740b3227f181b983a8f0b"></script>
-<script src="elementlist.js?49ff86ffb918c81d44611597aa763a50808e03f2"></script>
+<script src="elementlist.js?8bb39f6df70592a0b00f637d766de56cefc35d5f"></script>
 </body>
 </html>
