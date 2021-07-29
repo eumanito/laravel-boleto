@@ -337,8 +337,8 @@
 </span><span id="52" class="l"><a href="#52"> 52 </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> gerarNossoNumero()
 </span><span id="53" class="l"><a href="#53"> 53 </a>    {
 </span><span id="54" class="l"><a href="#54"> 54 </a>        <span class="php-var">$quantidadeCaracteresNossoNumero</span> = <span class="php-num">11</span>;
-</span><span id="55" class="l"><a href="#55"> 55 </a>        <span class="php-var">$digitoVerificador</span> = CalculoDV::unicredNossoNumero(<span class="php-var">$this</span>-&gt;numeroDocumento);
-</span><span id="56" class="l"><a href="#56"> 56 </a>        <span class="php-keyword1">return</span> Util::numberFormatGeral(<span class="php-var">$this</span>-&gt;numeroDocumento . <span class="php-var">$digitoVerificador</span>, <span class="php-var">$quantidadeCaracteresNossoNumero</span>);
+</span><span id="55" class="l"><a href="#55"> 55 </a>        <span class="php-var">$digitoVerificador</span> = CalculoDV::unicredNossoNumero(<span class="php-var">$this</span>-&gt;numero);
+</span><span id="56" class="l"><a href="#56"> 56 </a>        <span class="php-keyword1">return</span> Util::numberFormatGeral(<span class="php-var">$this</span>-&gt;numero . <span class="php-var">$digitoVerificador</span>, <span class="php-var">$quantidadeCaracteresNossoNumero</span>);
 </span><span id="57" class="l"><a href="#57"> 57 </a>    }
 </span><span id="58" class="l"><a href="#58"> 58 </a>
 </span><span id="59" class="l"><a href="#59"> 59 </a>    <span class="php-comment">/**
